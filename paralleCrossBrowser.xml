@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	
+  <test name="ChromeTest">
+	<parameter name="browserName" value="Chrome"></parameter>
+		<classes>
+			<class name="frameWork.TC8_CrossBrowser_OpenFB" />
+		</classes>
+	</test>
+	
+	<test name="EdgeTest">
+	<parameter name="browserName" value="Edge"></parameter>
+		<classes>
+			<class name="frameWork.TC8_CrossBrowser_OpenFB" />
+		</classes>
+	</test>
+	
+	<test name="FirFoxTest">
+	<parameter name="browserName" value="Firefox"></parameter>
+		<classes>
+			<class name="frameWork.TC8_CrossBrowser_OpenFB" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
